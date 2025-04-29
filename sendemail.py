@@ -3,13 +3,13 @@ def send_email():
     import getpass
     from email.mime.text import MIMEText
 
-    sender_address = 'waliadhruv100@gmail.com'
-    password = getpass.getpass()                                                 #'etoq jokq wlwf akql'
-    subject = 'AI Mafia - Machine Learning'
+    sender_address = 'Sender Email'
+    password = getpass.getpass()                                             
+    subject = 'Machine Learning'
     msg = '''
          Hello Everyone!
-         We are pleased to announce that we are going to start a new batch
-         of AI Mafia, Hope you will Join!
+         We are currently onLinkdien ,If we doing good then we will make 
+         You tube Channel.Lets see !
 
          Thank you!
          Dhruv Walia
@@ -22,9 +22,9 @@ def send_email():
     message = MIMEText(msg)
     message['Subject'] = subject
     message['From'] = sender_address
-    message['To'] = 'waliadhruv100@gmail.com'
+    message['To'] = 'Email'
 
-    server.sendmail(sender_address, 'waliadhruv100@gmail.com', message.as_string())
+    server.sendmail(sender_address, 'Email', message.as_string())
     server.quit()
 
 
